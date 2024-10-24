@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Sneakers</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+   </head>
+ <body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="imagenes/Captura_de_pantalla_2024-07-24_202557-removebg-preview.png" alt="Logotipo de StockX" width="120px" height="120px"></a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Buscar por marca, color, etc.">
+            </div>
+            <div class="navbar-links">
+                <a href="#">Noticias</a>
+                <a href="#">Información</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Vender</a>
+            </div>
+            <div class="navbar-user">
+                <button>Entrar</button>
+                <button>Registrarse</button>
+            </div>
+            <li class="submenu">
+                <img src="imagenes/cart.png" id="img-carrito">
+                <!-- carrito 1 -->
+                <div id="carrito"> 
+                        
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <!-- tbody del carrito ahi se insertaran los cursos que precionemos -->
+                            <tbody></tbody>
+                        </table>
+                        <!-- boton vaciar carrito -->
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+        </li>
+    </header>
+    <aside class="categorias">
+        <ul>
+            <li><a href="index5.html">Accesorios</a></li>
+            <li><a href="index6.html">Otros</a></li>
+            <li><a href="index1.html">Hombre</a></li>
+            <li><a href="index2.html">Mujer</a></li>
+            <li><a href="index3.html">Niño</a></li>
+            <li><a href="index4.html">Ropa</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="productos">
+            <div class="product-images"> 
+        <img id="mainImage" src="imagenes/adidas-Campus-00s-Core-Black-Product.avif" alt="Zapatillas Adidas Campus">
+        </div>
+        </section>
+        <section id="galeria" class="galeria">
+            <h2>Recomendado :</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="imagenes/Nike-SB-Dunk-Low-Court-Purple-Product.avif" alt="Nike SB Dunk Low en violeta" class="product-image">
+                    <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike SB Dunk Low en violeta</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price" ><p class="precio">USD 75</p></p>
+                    <p class="product-last-sale">Última venta: USD 111</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                </div>
+             </div> <!--.card-->
+             <div class="product-card">
+                <img src="imagenes/Nike-SB-Dunk-Low-J-Pack-Chicago-Product.avif" alt="Nike SB Dunk Low J-Pack Chicago" class="product-image">
+                <div class="product-info">
+                <img src="imagenes/estrellas.png">
+                <h2 class="product-name">Nike SB Dunk Low J-Pack Chicago</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 88</p></p>
+                        <p class="product-last-sale">Última venta: USD 146</p>
+                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+            </div>
+         </div> <!--.card-->
+         <div class="product-card">
+            <img src="imagenes/Nike-SB-Dunk-Low-Wheat-2020-Product.avif" alt="Nike SB Dunk Low en amarillo trigo" class="product-image">
+            <div class="product-info">
+            <img src="imagenes/estrellas.png">
+            <h2 class="product-name">Nike SB Dunk Low en amarillo trigo</h2>
+            <p class="product-offer">Oferta Más Baja</p>
+            <p class="product-price"><p class="precio">USD 70</p></p>
+            <p class="product-last-sale">Última venta: USD 140</p>
+            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+        </div>
+     </div> <!--.card-->
+       <div class="product-card">
+        <img src="imagenes/adidas-Yeezy-Foam-RNNR-Onyx-Product.avif" alt="adidas Yeezy Foam RNR en ónice" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">adidas Yeezy Foam RNR en ónice</h2>
+          <p class="product-offer">Oferta Más Baja</p>
+          <p class="product-price"><p class="precio">USD 71</p></p>
+          <p class="product-last-sale">Última venta: USD 120</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card--> 
+     <div class="product-card">
+        <img src="imagenes/Nike-Air-Force-1-Low-Supreme-Box-Logo-Black-Product.avif" alt="" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Air Force 1 Low Supreme en negro</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 137</p></p>
+                        <p class="product-last-sale">Última venta: USD 211</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card--> 
+    <div class="product-card">
+        <img src="imagenes/adidas-Campus-00s-Core-Black-Product.avif" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">adidas-Campus-Core-Black-Product</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 90</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card-->
+    <div class="product-card">
+        <img src="imagenes/Nike-SB-Dunk-Low-City-Of-Love-Burgundy-Crush-Product.avif"Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low-City-Of-Love-Burgundy</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 71</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card-->   <div class="product-card">
+        <img src="imagenes/Nike-SB-Dunk-Low-City-Of-Love-Burgundy-Crush-Product.avif"Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low-City-Of-Love-Burgundy</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 71</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card-->   
+    <div class="product-card">
+        <img src="imagenes/adidas.webp" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low SP St. John's</h2>
+          <p class="product-offer">Oferta Más Baja</p>
+          <p class="product-price"><p class="precio">USD 71</p></p>
+          <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card-->  
+    <div class="product-card">
+        <img src="imagenes/Nike-SB-Dunk-Low-Court-Purple-Product.avif" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low SP St. John's</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 71</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card--> 
+    <div class="product-card">
+        <img src="imagenes/Air-Jordan-1-Mid-Light-Smoke-Grey-Product.avif" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low SP St. John's</h2>
+          <p class="product-offer">Oferta Más Baja</p>
+          <p class="product-price"><p class="precio">USD 71</p></p>
+          <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card--> 
+    <div class="product-card">
+        <img src="imagenes/Air-Jordan-11-Retro-Low-Space-Jam-Product.avif" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low SP St. John's</h2>
+          <p class="product-offer">Oferta Más Baja</p>
+          <p class="product-price"><p class="precio">USD 71</p></p>
+          <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card--> 
+      <div class="product-card">
+        <img src="imagenes/Air-Jordan-4-Retro-Military-Blue-2024-Product.avif" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low SP St. John's</h2>
+          <p class="product-offer">Oferta Más Baja</p>
+          <p class="product-price"><p class="precio">USD 71</p></p>
+          <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card-->    
+    <div class="product-card">
+        <img src="imagenes/Air-Jordan-4-Retro-Oxidized-Green-Product.avif" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low SP St. John's</h2>
+          <p class="product-offer">Oferta Más Baja</p>
+          <p class="product-price"><p class="precio">USD 71</p></p>
+          <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card-->    
+    <div class="product-card">
+        <img src="imagenes/ASICS-Gel-1130-White-Clay-Canyon-Product.avif" alt="Nike Dunk Low St. John's" class="product-image">
+          <div class="product-info">
+          <img src="imagenes/estrellas.png">
+          <h2 class="product-name">Nike Dunk Low SP St. John's</h2>
+          <p class="product-offer">Oferta Más Baja</p>
+          <p class="product-price"><p class="precio">USD 71</p></p>
+          <p class="product-last-sale">Última venta: USD 100</p>
+          <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="16">Agregar Al Carrito</a>
+      </div>
+    </div> <!--.card-->
+            </div>
+        </section>
+    </main>
+    <script src="js/carrito.js"></script>
+    <footer class="pie">
+        <!-- Contenido del pie de página -->
+    </footer>
+</body>
+</html>

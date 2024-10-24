@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Sneakers</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="imagenes/Captura_de_pantalla_2024-07-24_202557-removebg-preview.png" alt="Logotipo de StockX" width="120px" height="120px"></a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Buscar por marca, color, etc.">
+            </div>
+            <div class="navbar-links">
+                <a href="#">Noticias</a>
+                <a href="#">Información</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Vender</a>
+            </div>
+            <div class="navbar-user">
+                <button>Entrar</button>
+                <button>Registrarse</button>
+            </div>
+            <li class="submenu">
+                <img src="imagenes/cart.png" id="img-carrito">
+                <!-- carrito 1 -->
+                <div id="carrito"> 
+                        
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <!-- tbody del carrito ahi se insertaran los cursos que precionemos -->
+                            <tbody></tbody>
+                        </table>
+                        <!-- boton vaciar carrito -->
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+        </li>
+    </header>
+    <aside class="categorias">
+        <ul>
+            <li><a href="index5.html">Accesorios</a></li>
+            <li><a href="index6.html">Otros</a></li>
+            <li><a href="index1.html">Hombre</a></li>
+            <li><a href="index2.html">Mujer</a></li>
+            <li><a href="index3.html">Niño</a></li>
+            <li><a href="index4.html">Ropa</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="productos">
+            <div class="product-images"> 
+        <img id="mainImage" src="imagenes/adidas-Campus-00s-Core-Black-Product.avif" alt="Zapatillas Adidas Campus">
+        </div>
+        </section>
+        <section id="galeria" class="galeria">
+            <h2>Genero / Unisex:</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Balenciaga-Cat-Eye-Sunglasses-Havana-Havana-Brown-BB0097S-30008869-003.avif" alt="Balenciaga Cat Eye Sunglasses Havana Havana Brown" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Balenciaga Cat Eye Sunglasses Havana Havana Brown</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Burberry-TB-Vintage-Check-Belt-Studio-1.avif" alt="Burberry TB Vintage Check Belt" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Burberry TB Vintage Check Belt</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 150</p></p>
+                        <p class="product-last-sale">Última venta: USD 180</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Burberry-Vintage-Check-Cotton-Baseball-Cap-Monogram-Motif-Beige.avif" alt="Burberry Vintage Check Cotton Baseball Cap Monogram Motif Beige" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Burberry Vintage Check Cotton Baseball Cap Monogram Motif Beige</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 120</p></p>
+                        <p class="product-last-sale">Última venta: USD 150</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Casio-Analog-MTP1302D-2A2V-Tiffany-Blue.avif" alt="Casio Analog MTP1302D-2A2V Tiffany Blue" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Casio Analog MTP1302D-2A2V Tiffany Blue</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 220</p></p>
+                        <p class="product-last-sale">Última venta: USD 250</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Casio-G-Shock-GA-2100MNG-7AJR-White.avif" alt="Casio G-Shock GA-2100MNG-7AJR White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Casio G-Shock GA-2100MNG-7AJR White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 130</p></p>
+                        <p class="product-last-sale">Última venta: USD 220</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Gentle-Monster-x-Jennie-Jentle-Salon-Barrette-Sunglasses-Silver-Clear-02.avif" alt="Gentle Monster x Jennie Jentle Salon Barrette Sunglasses Silver Clear" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Gentle Monster x Jennie Jentle Salon Barrette Sunglasses Silver Clear</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 140</p></p>
+                        <p class="product-last-sale">Última venta: USD 170</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Gucci-Jumbo-GG-Wallet-Black.avif" alt="Gucci Jumbo GG Wallet Black" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Gucci Jumbo GG Wallet Black</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 160</p></p>
+                        <p class="product-last-sale">Última venta: USD 200</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/estrellas.png">
+                    <img src="imagenes/accesorios/Kith-New-Era-for-USA-Basketball-Aaron-Cap-Nocturnal.avif" alt="Kith New Era for USA Basketball Aaron Cap Nocturnal" class="product-image">
+                    <div class="product-info">
+                        <h2 class="product-name">Kith New Era for USA Basketball Aaron Cap Nocturnal</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 230</p></p>
+                        <p class="product-last-sale">Última venta: USD 270</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Kith-New-Era-for-USA-Basketball-Aaron-Cap-Silk.avif" alt="Kith New Era for USA Basketball Aaron Cap Silk" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Kith New Era for USA Basketball Aaron Cap Silk</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 90</p></p>
+                        <p class="product-last-sale">Última venta: USD 110</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Louis-Vuitton-by-Tyler-the-Creator-Multiple-Wallet-Chocolate-Craggy-Monogram.avif" alt="Louis Vuitton by Tyler the Creator Multiple Wallet Chocolate Craggy Monogram" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Louis Vuitton by Tyler the Creator Multiple Wallet Chocolate Craggy Monogram</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 110</p></p>
+                        <p class="product-last-sale">Última venta: USD 140</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Nike-x-NOCTA-LArt-DRX-Hat-Green.avif" alt="Nike x NOCTA L'Art DRX Hat Green" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Nike x NOCTA L'Art DRX Hat Green</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 95</p></p>
+                        <p class="product-last-sale">Última venta: USD 120</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                    </div>
+                </div>                
+                
+                <div class="product-card">
+                    <img src="imagenes/accesorios/OFF-WHITE-Virgil-Square-Frame-Sunglasses-Black-White-Grey-FW21.avif" alt="OFF-WHITE Virgil Square Frame Sunglasses Black White Grey" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">OFF-WHITE Virgil Square Frame Sunglasses Black White Grey</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 350</p></p>
+                        <p class="product-last-sale">Última venta: USD 400</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Prada-Rectangle-Sunglasses-Black-SPRA07-1ABFS0.avif" alt="Prada Rectangle Sunglasses Black" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Prada Rectangle Sunglasses Black</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 70</p></p>
+                        <p class="product-last-sale">Última venta: USD 85</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Prada-Symbole-Sunglasses-Black-SPR17W-E1AB-F05S0-C-049-Product.avif" alt="Prada Symbole Sunglasses Black" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Prada Symbole Sunglasses Black</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 70</p></p>
+                        <p class="product-last-sale">Última venta: USD 85</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Rhode-Skin-Lip-Case-Grey-Product.avif" alt="Rhode Skin Lip Case Grey" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Rhode Skin Lip Case Grey</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 90</p></p>
+                        <p class="product-last-sale">Última venta: USD 120</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Stanley-Flowstate-Quencher-40oz-Tumbler-Summer-Sunset-Gradient-v2.avif" alt="Stanley Flowstate Quencher 40oz Tumbler Summer Sunset Gradient" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Stanley Flowstate Quencher 40oz Tumbler Summer Sunset Gradient</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 100</p></p>
+                        <p class="product-last-sale">Última venta: USD 130</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="16">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Stanley-x-Olivia-Rodrigo-Flowstate-Quencher-40oz-Tumbler-Purple.avif" alt="Stanley x Olivia Rodrigo Flowstate Quencher 40oz Tumbler Purple" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Stanley x Olivia Rodrigo Flowstate Quencher 40oz Tumbler Purple</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 120</p></p>
+                        <p class="product-last-sale">Última venta: USD 150</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="17">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Stussy-x-Nike-Victory-Elite-Sunglasses-Light-Bone.avif" alt="Stussy x Nike Victory Elite Sunglasses Light Bone" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Stussy x Nike Victory Elite Sunglasses Light Bone</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 100</p></p>
+                        <p class="product-last-sale">Última venta: USD 130</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="18">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Supreme-Ducati-C1-Leather-Gloves-Red.avif" alt="Supreme Ducati C1 Leather Gloves Red" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Supreme Ducati C1 Leather Gloves Red</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="19">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Supreme-Leaktite-5-Gallon-Bucket-White.avif" alt="Supreme Leaktite 5 Gallon Bucket White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Supreme Leaktite 5 Gallon Bucket White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 90</p></p>
+                        <p class="product-last-sale">Última venta: USD 120</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="20">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Supreme-Logo-Waist-Bag-Black.avif" alt="Supreme Logo Waist Bag Black" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Supreme Logo Waist Bag Black</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 120</p></p>
+                        <p class="product-last-sale">Última venta: USD 150</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="21">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Supreme-Maradona-Camp-Cap-Multicolor.avif" alt="Supreme Maradona Camp Cap Multicolor" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Supreme Maradona Camp Cap Multicolor</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="22">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Swatch-x-Omega-Bioceramic-Moonswatch-Mission-On-Earth-Lava-SO33O100-Black-Product.avif" alt="Swatch x Omega Bioceramic Moonswatch Mission On Earth Lava" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Swatch x Omega Bioceramic Moonswatch Mission On Earth Lava</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="23">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Swatch-x-Omega-Bioceramic-Moonswatch-Mission-to-Earth-SO33G100-Navy-Product-2.avif" alt="Swatch x Omega Bioceramic Moonswatch Mission to Earth" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Swatch x Omega Bioceramic Moonswatch Mission to Earth</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 90</p></p>
+                        <p class="product-last-sale">Última venta: USD 120</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="24">Agregar Al Carrito</a>
+                    </div>
+                </div>                
+                
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Swatch-x-Omega-Bioceramic-Moonswatch-Mission-to-Mercury-SO33A100-Grey-Product.avif" alt="Swatch x Omega Bioceramic Moonswatch Mission to Mercury" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Swatch x Omega Bioceramic Moonswatch Mission to Mercury</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 350</p></p>
+                        <p class="product-last-sale">Última venta: USD 400</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="25">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Swatch-x-Omega-Bioceramic-Moonswatch-Mission-To-Moonphase-Snoopy-Black-Product.avif" alt="Swatch x Omega Bioceramic Moonswatch Mission to Moonphase Snoopy Black" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Swatch x Omega Bioceramic Moonswatch Mission to Moonphase Snoopy Black</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 250</p></p>
+                        <p class="product-last-sale">Última venta: USD 300</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="26">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Swatch-x-Omega-Bioceramic-Moonswatch-Mission-To-Moonphase-Snoopy-SO33W700-White-Product.avif" alt="Swatch x Omega Bioceramic Moonswatch Mission to Moonphase Snoopy White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Swatch x Omega Bioceramic Moonswatch Mission to Moonphase Snoopy White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 250</p></p>
+                        <p class="product-last-sale">Última venta: USD 300</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="27">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Swatch-x-Omega-Bioceramic-Moonswatch-Mission-to-Uranus-SO33L100-Pale-Blue-Product.avif" alt="Swatch x Omega Bioceramic Moonswatch Mission to Uranus" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Swatch x Omega Bioceramic Moonswatch Mission to Uranus</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 400</p></p>
+                        <p class="product-last-sale">Última venta: USD 450</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="28">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/TAG-Heuer-x-Kith-Formula-1-WA121F-BA0023-Eggshell.avif" alt="TAG Heuer x Kith Formula 1 Eggshell" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">TAG Heuer x Kith Formula 1 Eggshell</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 600</p></p>
+                        <p class="product-last-sale">Última venta: USD 700</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="29">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/accesorios/Versace-Irregular-Biggie-Sunglasses-Black-Dark-Grey-VE4361-Product.avif" alt="Versace Irregular Biggie Sunglasses Black Dark Grey" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Versace Irregular Biggie Sunglasses Black Dark Grey</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 150</p></p>
+                        <p class="product-last-sale">Última venta: USD 200</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="30">Agregar Al Carrito</a>
+                    </div>
+                </div>                
+                                   
+            </div>
+        </section>
+    </main>
+    <script src="js/carrito.js"></script>
+    <footer class="pie">
+    </footer>
+</body>
+</html>

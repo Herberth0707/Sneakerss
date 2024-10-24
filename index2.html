@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Sneakers</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="imagenes/Captura_de_pantalla_2024-07-24_202557-removebg-preview.png" alt="Logotipo de StockX" width="120px" height="120px"></a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Buscar por marca, color, etc.">
+            </div>
+            <div class="navbar-links">
+                <a href="#">Noticias</a>
+                <a href="#">Información</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Vender</a>
+            </div>
+            <div class="navbar-user">
+                <button>Entrar</button>
+                <button>Registrarse</button>
+            </div>
+            <li class="submenu">
+                <img src="imagenes/cart.png" id="img-carrito">
+                <!-- carrito 1 -->
+                <div id="carrito"> 
+                        
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <!-- tbody del carrito ahi se insertaran los cursos que precionemos -->
+                            <tbody></tbody>
+                        </table>
+                        <!-- boton vaciar carrito -->
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+        </li>
+    </header>
+    <aside class="categorias">
+        <ul>
+            <li><a href="index5.html">Accesorios</a></li>
+            <li><a href="index6.html">Otros</a></li>
+            <li><a href="index1.html">Hombre</a></li>
+            <li><a href="index2.html">Mujer</a></li>
+            <li><a href="index3.html">Niño</a></li>
+            <li><a href="index4.html">Ropa</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="productos">
+            <div class="product-images"> 
+        <img id="mainImage" src="imagenes/adidas-Campus-00s-Core-Black-Product.avif" alt="Zapatillas Adidas Campus">
+        </div>
+        </section>
+        <section id="galeria" class="galeria">       
+         <h2>Genero / Mujer:</h2>
+         <div class="product-list">
+            <div class="product-card">
+                <img src="imagenes/mujer/adidas-Gazelle-Indoor-Sandy-Pink-Womens-Product.avif" alt="adidas Gazelle Indoor Sandy Pink" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">adidas Gazelle Indoor Sandy Pink</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 75</p></p>
+                    <p class="product-last-sale">Última venta: USD 111</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/adidas-Sambae-Hello-Kitty-Womens-Product.avif" alt="adidas Samba Hello Kitty" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">adidas Samba Hello Kitty</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 88</p></p>
+                    <p class="product-last-sale">Última venta: USD 146</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Air-Jordan-1-High-OG-First-in-Flight-Womens-Product.avif" alt="Air Jordan 1 High OG First in Flight" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Air Jordan 1 High OG First in Flight</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 70</p></p>
+                    <p class="product-last-sale">Última venta: USD 140</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Air-Jordan-1-Low-Method-of-Make-Perfect-Pink-Womens-Product.avif" alt="Air Jordan 1 Low Method of Make Perfect Pink" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Air Jordan 1 Low Method of Make Perfect Pink</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 120</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Air-Jordan-1-Retro-High-OG-Atmosphere-W-Product.avif" alt="Air Jordan 1 Retro High OG Atmosphere" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Air Jordan 1 Retro High OG Atmosphere</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 137</p></p>
+                    <p class="product-last-sale">Última venta: USD 211</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Air-Jordan-11-Retro-Low-Legend-Pink-Womens-Product.avif" alt="Air Jordan 11 Retro Low Legend Pink" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Air Jordan 11 Retro Low Legend Pink</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 100</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Air-Jordan-12-Retro-A-Ma-Maniere-Black-W-Product.avif" alt="Air Jordan 12 Retro A Ma Maniére Black" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Air Jordan 12 Retro A Ma Maniére Black</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 100</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Air-Jordan-4-Retro-Off-White-Sail-W-Product.avif" alt="Air Jordan 4 Retro Off-White Sail" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Air Jordan 4 Retro Off-White Sail</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 100</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Balenciaga-x-Crocs-Madame-80MM-Black-W.avif" alt="Balenciaga x Crocs Madame 80MM Black" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Balenciaga x Crocs Madame 80MM Black</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 100</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Gucci-GG-Supreme-Platform-Sandal-Dark-Red-Womens-Product.avif" alt="Gucci GG Supreme Platform Sandal Dark Red" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Gucci GG Supreme Platform Sandal Dark Red</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 100</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Gucci-Interlocking-G-Faux-Fur-Slippers-Pink-Black-Womens.avif" alt="Gucci Interlocking G Faux Fur Slippers Pink Black" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Gucci Interlocking G Faux Fur Slippers Pink Black</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 100</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Gucci-Slide-Pink-Rubber-W-Product.avif" alt="Gucci Slide Pink Rubber" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Gucci Slide Pink Rubber</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 71</p></p>
+                    <p class="product-last-sale">Última venta: USD 100</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                </div>
+            </div>
+           
+            <div class="product-card">
+                <img src="imagenes/mujer/Gucci-Web-Slide-Pink-Rubber-W-Product.avif" alt="Gucci Web Slide Pink Rubber" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Gucci Web Slide Pink Rubber</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 290</p></p>
+                    <p class="product-last-sale">Última venta: USD 320</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Hermes-Oasis-Blanc-Calfskin.avif" alt="Hermes Oasis Blanc Calfskin" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Hermes Oasis Blanc Calfskin</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 700</p></p>
+                    <p class="product-last-sale">Última venta: USD 750</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Maison-Margiela-Chelsea-Tabi-Boot-Black-Womens.avif" alt="Maison Margiela Chelsea Tabi Boot Black" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Maison Margiela Chelsea Tabi Boot Black</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 685</p></p>
+                    <p class="product-last-sale">Última venta: USD 725</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Air-Force-1-07-LX-Pearl-Pink-Paw-Print-Womens.avif" alt="Nike Air Force 1 '07 LX Pearl Pink Paw Print" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Air Force 1 '07 LX Pearl Pink Paw Print</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 130</p></p>
+                    <p class="product-last-sale">Última venta: USD 150</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="16">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Air-Max-1-86-Jacquemus-Dark-Red-Womens-Product.avif" alt="Nike Air Max 1 '86 Jacquemus Dark Red" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Air Max 1 '86 Jacquemus Dark Red</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 180</p></p>
+                    <p class="product-last-sale">Última venta: USD 200</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="17">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Air-Vapormax-Plus-Pink-Foam-Womens-Product.avif" alt="Nike Air Vapormax Plus Pink Foam" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Air Vapormax Plus Pink Foam</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 220</p></p>
+                    <p class="product-last-sale">Última venta: USD 250</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="18">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Air-Zoom-Alphafly-Next-2-Hyper-Pink-Laser-Orange-Womens-Product.avif" alt="Nike Air Zoom Alphafly Next% 2 Hyper Pink Laser Orange" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Air Zoom Alphafly Next% 2 Hyper Pink Laser Orange</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 275</p></p>
+                    <p class="product-last-sale">Última venta: USD 300</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="19">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Dunk-Low-Essential-Paisley-Pack-Pink-W-Product.avif" alt="Nike Dunk Low Essential Paisley Pack Pink" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Dunk Low Essential Paisley Pack Pink</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 120</p></p>
+                    <p class="product-last-sale">Última venta: USD 140</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="20">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Dunk-Low-Move-To-Zero-Pale-Coral-W-Product.avif" alt="Nike Dunk Low Move To Zero Pale Coral" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Dunk Low Move To Zero Pale Coral</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 110</p></p>
+                    <p class="product-last-sale">Última venta: USD 130</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="21">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Dunk-Low-Neapolitan-Womens-Product.avif" alt="Nike Dunk Low Neapolitan" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Dunk Low Neapolitan</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 115</p></p>
+                    <p class="product-last-sale">Última venta: USD 140</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="22">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Dunk-Low-PRM-Bacon-Womens-Product.avif" alt="Nike Dunk Low PRM Bacon" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Dunk Low PRM Bacon</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 150</p></p>
+                    <p class="product-last-sale">Última venta: USD 180</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="23">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Dunk-Low-Smokey-Mauve-Womens-Product.avif" alt="Nike Dunk Low Smokey Mauve" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Dunk Low Smokey Mauve</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 130</p></p>
+                    <p class="product-last-sale">Última venta: USD 160</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="24">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Dunk-Low-White-Black-2021-W-Product.avif" alt="Nike Dunk Low White Black 2021" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Dunk Low White Black 2021</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 110</p></p>
+                    <p class="product-last-sale">Última venta: USD 120</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="25">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Nike-Free-Metcon-5-Black-Anthracite-Womens.avif" alt="Nike Free Metcon 5 Black Anthracite" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Nike Free Metcon 5 Black Anthracite</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 140</p></p>
+                    <p class="product-last-sale">Última venta: USD 160</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="26">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Versace-Medusa-Chain-Leather-Heels-Blue-Womens.avif" alt="Versace Medusa Chain Leather Heels Blue" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Versace Medusa Chain Leather Heels Blue</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 850</p></p>
+                    <p class="product-last-sale">Última venta: USD 900</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="27">Agregar Al Carrito</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/mujer/Versace-Medusa-Chain-Leather-Heels-Pink-Womens.avif" alt="Versace Medusa Chain Leather Heels Pink" class="product-image">
+                <div class="product-info">
+                    <img src="imagenes/estrellas.png">
+                    <h2 class="product-name">Versace Medusa Chain Leather Heels Pink</h2>
+                    <p class="product-offer">Oferta Más Baja</p>
+                    <p class="product-price"><p class="precio">USD 850</p></p>
+                    <p class="product-last-sale">Última venta: USD 900</p>
+                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="28">Agregar Al Carrito</a>
+                </div>
+            </div>
+            
+            </div>
+        </section>
+    </main>
+    <script src="js/carrito.js"></script>
+    <footer class="pie">
+    </footer>
+</body>
+</html>

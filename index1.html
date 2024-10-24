@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Sneakers</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="imagenes/Captura_de_pantalla_2024-07-24_202557-removebg-preview.png" alt="Logotipo de StockX" width="120px" height="120px"></a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Buscar por marca, color, etc.">
+            </div>
+            <div class="navbar-links">
+                <a href="#">Noticias</a>
+                <a href="#">Información</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Vender</a>
+            </div>
+            <div class="navbar-user">
+                <button>Entrar</button>
+                <button>Registrarse</button>
+            </div>
+            <li class="submenu">
+                <img src="imagenes/cart.png" id="img-carrito">
+                <!-- carrito 1 -->
+                <div id="carrito"> 
+                        
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <!-- tbody del carrito ahi se insertaran los cursos que precionemos -->
+                            <tbody></tbody>
+                        </table>
+                        <!-- boton vaciar carrito -->
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>
+        </li>
+    </header>
+    <aside class="categorias">
+        <ul>
+            <li><a href="index5.html">Accesorios</a></li>
+            <li><a href="index6.html">Otros</a></li>
+            <li><a href="index1.html">Hombre</a></li>
+            <li><a href="index2.html">Mujer</a></li>
+            <li><a href="index3.html">Niño</a></li>
+            <li><a href="index4.html">Ropa</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="productos">
+            <div class="product-images"> 
+        <img id="mainImage" src="imagenes/adidas-Campus-00s-Core-Black-Product.avif" alt="Zapatillas Adidas Campus">
+        </div>
+        </section>
+        <section id="galeria" class="galeria">
+            <h2>Genero / Hombre:</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="imagenes/hombre/adidas-Predator-24-Elite-FT-FG-Base-Black-Pack-Product.avif" alt="adidas Predator 24 Elite FT FG Base Black" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">adidas Predator 24 Elite FT FG Base Black</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 250</p></p>
+                        <p class="product-last-sale">Última venta: USD 280</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/adidas-Predator-Elite-Foldover-Tongue-F-Solar-Energy-Pack-Product.avif" alt="adidas Predator Elite Foldover Tongue F Solar Energy" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">adidas Predator Elite Foldover Tongue F Solar Energy</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 230</p></p>
+                        <p class="product-last-sale">Última venta: USD 260</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/adidas-Predator-Elite-Foldover-Tongue-FG-Lucid-Blue-Solar-Red-Product.avif" alt="adidas Predator Elite Foldover Tongue FG Lucid Blue" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">adidas Predator Elite Foldover Tongue FG Lucid Blue</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 240</p></p>
+                        <p class="product-last-sale">Última venta: USD 270</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Air-Jordan-1-High-Golf-Camo-Product.avif" alt="Air Jordan 1 High Golf Camo" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Air Jordan 1 High Golf Camo</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 190</p></p>
+                        <p class="product-last-sale">Última venta: USD 220</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Air-Jordan-1-High-OG-Spider-Man-Across-the-Spider-Verse-Product.avif" alt="Air Jordan 1 High OG Spider-Man Across the Spider-Verse" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Air Jordan 1 High OG Spider-Man Across the Spider-Verse</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 300</p></p>
+                        <p class="product-last-sale">Última venta: USD 350</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Air-Jordan-1-Retro-Low-Golf-USA-Product.avif" alt="Air Jordan 1 Retro Low Golf USA" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Air Jordan 1 Retro Low Golf USA</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 160</p></p>
+                        <p class="product-last-sale">Última venta: USD 200</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Air-Jordan-1-Retro-Low-OG-SP-Travis-Scott-Black-Phantom-Product.avif" alt="Air Jordan 1 Retro Low OG SP Travis Scott Black Phantom" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Air Jordan 1 Retro Low OG SP Travis Scott Black Phantom</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 550</p></p>
+                        <p class="product-last-sale">Última venta: USD 600</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Air-Jordan-11-Retro-Cool-Grey-2021-Product.avif" alt="Air Jordan 11 Retro Cool Grey 2021" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Air Jordan 11 Retro Cool Grey 2021</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 220</p></p>
+                        <p class="product-last-sale">Última venta: USD 250</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Air-Jordan-4-Retro-Black-Cat-2020-Product.avif" alt="Air Jordan 4 Retro Black Cat 2020" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Air Jordan 4 Retro Black Cat 2020</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 220</p></p>
+                        <p class="product-last-sale">Última venta: USD 550</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Air-Jordan-4-Retro-Thunder-2023-Product.avif" alt="Air Jordan 4 Retro Thunder 2023" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Air Jordan 4 Retro Thunder 2023</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 400</p></p>
+                        <p class="product-last-sale">Última venta: USD 450</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-Gel-1130-Black-Pure-Silver-Product.avif" alt="ASICS Gel 1130 Black Pure Silver" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">ASICS Gel 1130 Black Pure Silver</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 95</p></p>
+                        <p class="product-last-sale">Última venta: USD 120</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-Gel-1130-White-Black-Product.avif" alt="ASICS Gel 1130 White Black" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">ASICS Gel 1130 White Black</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 95</p></p>
+                        <p class="product-last-sale">Última venta: USD 120</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Crocs-Classic-Clog-Lightning-McQueen-Product.avif" alt="Crocs Classic Clog Lightning McQueen" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Crocs Classic Clog Lightning McQueen</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 60</p></p>
+                        <p class="product-last-sale">Última venta: USD 85</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Gucci-Agrado-Grg-Rubber-Slide-Black-Blue-Green-Red-Product.avif" alt="Gucci Agrado Grg Rubber Slide Black Blue" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Gucci Agrado Grg Rubber Slide Black Blue</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 300</p></p>
+                        <p class="product-last-sale">Última venta: USD 350</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Nike-Air-Pegasus-89-Golf-NRG-Accept-and-Embrace-Product.avif" alt="Nike Air Pegasus 89 Golf NRG Accept and Embrace" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Nike Air Pegasus 89 Golf NRG Accept and Embrace</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 130</p></p>
+                        <p class="product-last-sale">Última venta: USD 160</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Nike-Kobe-8-Protro-Venice-Beach-2024-Product.avif" alt="Nike Kobe 8 Protro Venice Beach 2024" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Nike Kobe 8 Protro Venice Beach 2024</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 180</p></p>
+                        <p class="product-last-sale">Última venta: USD 220</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="16">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Nike-SB-Dunk-Low-Futura-Laboratories-Bleached-Aqua-Product.avif" alt="Nike SB Dunk Low Futura Laboratories Bleached Aqua" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Nike SB Dunk Low Futura Laboratories Bleached Aqua</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 150</p></p>
+                        <p class="product-last-sale">Última venta: USD 180</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="17">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Nike-Vapor-Edge-360-DT-Cleat-Diamond-Turf-Black-White-Product.avif" alt="Nike Vapor Edge 360 DT Cleat Diamond Turf Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Nike Vapor Edge 360 DT Cleat Diamond Turf Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 140</p></p>
+                        <p class="product-last-sale">Última venta: USD 170</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="18">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/UGG-Tasman-Slipper-Palace-Chestnut-Product.avif" alt="UGG Tasman Slipper Palace Chestnut" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">UGG Tasman Slipper Palace Chestnut</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 100</p></p>
+                        <p class="product-last-sale">Última venta: USD 130</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="19">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/Vans-Knu-Skool-Black-White-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="20">Agregar Al Carrito</a>
+                    </div>
+                </div>  
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-Gel-1130-Tuna-Blue-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="21">Agregar Al Carrito</a>
+                    </div>  
+                </div>    
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-Gel-1130-White-Black-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="22">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-Gel-Kayano-14-White-Malachite-Green-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="23">Agregar Al Carrito</a>
+                    </div>
+                </div>    
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-Gel-NYC-Cream-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="24">Agregar Al Carrito</a>
+                    </div>
+                </div>    
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-Gel-NYC-Ivory-Clay-Grey-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="25">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-GT-2160-Above-the-Clouds-Chocolate-Brown-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="26">Agregar Al Carrito</a>
+                    </div>
+                </div>  
+                <div class="product-card">
+                    <img src="imagenes/hombre/ASICS-GT-2160-White-Shamrock-Green-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="27">Agregar Al Carrito</a>
+                    </div>
+                </div>   
+                <div class="product-card">
+                    <img src="imagenes/hombre/Onitsuka-Tiger-Mexico-66-Black-White-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="28">Agregar Al Carrito</a>
+                    </div>
+                </div>  
+                <div class="product-card">
+                    <img src="imagenes/hombre/Nike-KD-4-Weatherman-2024-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="29">Agregar Al Carrito</a>
+                    </div>
+                </div> 
+                <div class="product-card">
+                    <img src="imagenes/hombre/Nike-Kobe-6-Protro-Reverse-Grinch-Product.avif" alt="Vans Knu Skool Black White" class="product-image">
+                    <div class="product-info">
+                        <img src="imagenes/estrellas.png">
+                        <h2 class="product-name">Vans Knu Skool Black White</h2>
+                        <p class="product-offer">Oferta Más Baja</p>
+                        <p class="product-price"><p class="precio">USD 80</p></p>
+                        <p class="product-last-sale">Última venta: USD 100</p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="30">Agregar Al Carrito</a>
+                    </div>
+                </div>            
+            </div>
+        </section>
+    </main>
+    <script src="js/carrito.js"></script>
+    <footer class="pie">
+    </footer>
+</body>
+</html>
